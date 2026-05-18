@@ -18,7 +18,8 @@ type Result struct {
 
 func Check(service config.Service) Result {
 	start := time.Now()
-	resp, err := http.Get(service.URL)
+	client := &http.Client{Timeout: 5 * time.Second}
+	resp, err := client.Get(service.URL)
 	endtime := time.Since(start)
 	if err != nil {
 		return Result{
