@@ -1,12 +1,19 @@
 package main
 
+import (
+	"fmt"
+	"log"
+
+	"github.com/SHAIK14/pulsemon/config"
+)
+
 func main() {
 	data, err := config.Load("config.json")
 	if err != nil {
-		return err
+		log.Fatal(err)
 	}
-	for _, d := range data {
-		fmt.Pri
+	for _, d := range data.Services {
+		fmt.Println(d.Name, d.URL)
 	}
 
 }

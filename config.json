@@ -1,10 +1,7 @@
 {
   "services": [
-    {
-      "name": ""
-    },
-    {
-      "db": ""
-    }
+    { "name": "auth", "url": "https://auth.myapp.com/health" },
+    { "name": "payments", "url": "https://payments.myapp.com/health" },
+    { "name": "db", "url": "https://db.myapp.com/health" }
   ]
 }
