@@ -1,7 +1,54 @@
 {
   "services": [
-    { "name": "auth", "url": "https://auth.myapp.com/health" },
-    { "name": "payments", "url": "https://payments.myapp.com/health" },
-    { "name": "db", "url": "https://db.myapp.com/health" }
+    { "name": "httpbin-get", "url": "https://httpbin.org/get" },
+    { "name": "httpbin-status-200", "url": "https://httpbin.org/status/200" },
+    { "name": "httpbin-uuid", "url": "https://httpbin.org/uuid" },
+    { "name": "httpbin-ip", "url": "https://httpbin.org/ip" },
+
+    { "name": "postman-echo-get", "url": "https://postman-echo.com/get" },
+    {
+      "name": "postman-echo-status",
+      "url": "https://postman-echo.com/status/200"
+    },
+    {
+      "name": "postman-echo-headers",
+      "url": "https://postman-echo.com/headers"
+    },
+    { "name": "postman-echo-time", "url": "https://postman-echo.com/time/now" },
+
+    {
+      "name": "jsonplaceholder-posts",
+      "url": "https://jsonplaceholder.typicode.com/posts"
+    },
+    {
+      "name": "jsonplaceholder-users",
+      "url": "https://jsonplaceholder.typicode.com/users"
+    },
+    {
+      "name": "jsonplaceholder-todos",
+      "url": "https://jsonplaceholder.typicode.com/todos"
+    },
+    {
+      "name": "jsonplaceholder-comments",
+      "url": "https://jsonplaceholder.typicode.com/comments"
+    },
+
+    { "name": "reqres-users", "url": "https://reqres.in/api/users?page=1" },
+    { "name": "reqres-unknown", "url": "https://reqres.in/api/unknown" },
+    { "name": "reqres-single-user", "url": "https://reqres.in/api/users/2" },
+
+    { "name": "dummyjson-products", "url": "https://dummyjson.com/products" },
+    { "name": "dummyjson-users", "url": "https://dummyjson.com/users" },
+    { "name": "dummyjson-posts", "url": "https://dummyjson.com/posts" },
+
+    {
+      "name": "fakerapi-users",
+      "url": "https://fakerapi.it/api/v1/users?_quantity=1"
+    },
+    {
+      "name": "fakerapi-texts",
+      "url": "https://fakerapi.it/api/v1/texts?_quantity=1"
+    },
+    { "name": "fake", "url": "https://this-does-not-exist-xyz.com" }
   ]
 }
